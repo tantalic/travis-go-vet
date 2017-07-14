@@ -43,4 +43,6 @@ matrix:
     - go: 1.8
     - go: 1.8.2
     - go: 1.8.3
-script: go vet ./...
+script: 
+  - go vet ./...
+  - go test -cover
